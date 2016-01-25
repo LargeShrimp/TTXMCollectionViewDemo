@@ -25,6 +25,11 @@
 		843EDD2A1C56683D002A4795 /* GGBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD271C56683D002A4795 /* GGBannerCollectionViewCell.m */; };
 		843EDD2B1C56683D002A4795 /* GGBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD291C56683D002A4795 /* GGBannerView.m */; };
 		843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */; };
+		843EDD311C567876002A4795 /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD301C567876002A4795 /* CustomCollectionViewLayout.m */; };
+		843EDD341C56789D002A4795 /* DDHomeThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD331C56789D002A4795 /* DDHomeThemeView.m */; };
+		849675031C567CE20016E2E8 /* DDHomeThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849675011C567CE20016E2E8 /* DDHomeThemeCell.m */; };
+		849675041C567CE20016E2E8 /* DDHomeThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */; };
+		849675071C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */; };
 		D4288540CE35F5ED857B8D2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B06422D100E4B590B396CC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,15 @@
 		843EDD291C56683D002A4795 /* GGBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBannerView.m; sourceTree = "<group>"; };
 		843EDD2C1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDImagePlayerCell+ConfigCell.h"; sourceTree = "<group>"; };
 		843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDImagePlayerCell+ConfigCell.m"; sourceTree = "<group>"; };
+		843EDD2F1C567876002A4795 /* CustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		843EDD301C567876002A4795 /* CustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		843EDD321C56789D002A4795 /* DDHomeThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeThemeView.h; sourceTree = "<group>"; };
+		843EDD331C56789D002A4795 /* DDHomeThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeThemeView.m; sourceTree = "<group>"; };
+		849675001C567CE20016E2E8 /* DDHomeThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeThemeCell.h; sourceTree = "<group>"; };
+		849675011C567CE20016E2E8 /* DDHomeThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeThemeCell.m; sourceTree = "<group>"; };
+		849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeThemeCell.xib; sourceTree = "<group>"; };
+		849675051C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDHomeThemeCell+ConfigThemeCell.h"; sourceTree = "<group>"; };
+		849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDHomeThemeCell+ConfigThemeCell.m"; sourceTree = "<group>"; };
 		9C90C1D5945FB2CDFF76E853 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F03E60B44C3171A5FC6CB518 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +125,8 @@
 				8403D6831C56055000774406 /* C */,
 				8403D66F1C56029400774406 /* AppDelegate.h */,
 				8403D6701C56029400774406 /* AppDelegate.m */,
+				843EDD2F1C567876002A4795 /* CustomCollectionViewLayout.h */,
+				843EDD301C567876002A4795 /* CustomCollectionViewLayout.m */,
 				8403D6751C56029400774406 /* Main.storyboard */,
 				8403D6781C56029400774406 /* Assets.xcassets */,
 				8403D67A1C56029400774406 /* LaunchScreen.storyboard */,
@@ -135,6 +151,8 @@
 				8403D6731C56029400774406 /* ViewController.m */,
 				843EDD151C565ED4002A4795 /* DDHomeHeaderView.h */,
 				843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */,
+				843EDD321C56789D002A4795 /* DDHomeThemeView.h */,
+				843EDD331C56789D002A4795 /* DDHomeThemeView.m */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -157,6 +175,11 @@
 				843EDD221C5667CF002A4795 /* DDImagePlayerCell.xib */,
 				843EDD2C1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.h */,
 				843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */,
+				849675001C567CE20016E2E8 /* DDHomeThemeCell.h */,
+				849675011C567CE20016E2E8 /* DDHomeThemeCell.m */,
+				849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */,
+				849675051C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.h */,
+				849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -247,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849675041C567CE20016E2E8 /* DDHomeThemeCell.xib in Resources */,
 				8403D67C1C56029400774406 /* LaunchScreen.storyboard in Resources */,
 				8403D6791C56029400774406 /* Assets.xcassets in Resources */,
 				8403D6891C56056C00774406 /* DDHomeCategoryCell.xib in Resources */,
@@ -315,10 +339,14 @@
 				8403D6741C56029400774406 /* ViewController.m in Sources */,
 				8403D6711C56029400774406 /* AppDelegate.m in Sources */,
 				843EDD2B1C56683D002A4795 /* GGBannerView.m in Sources */,
+				843EDD311C567876002A4795 /* CustomCollectionViewLayout.m in Sources */,
 				843EDD2A1C56683D002A4795 /* GGBannerCollectionViewCell.m in Sources */,
 				8403D68A1C56056C00774406 /* DDHomeCategoryCell.m in Sources */,
 				843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */,
+				843EDD341C56789D002A4795 /* DDHomeThemeView.m in Sources */,
+				849675031C567CE20016E2E8 /* DDHomeThemeCell.m in Sources */,
 				8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */,
+				849675071C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m in Sources */,
 				843EDD1E1C566398002A4795 /* DDHomeFirstCell.m in Sources */,
 				843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */,
 				843EDD231C5667CF002A4795 /* DDImagePlayerCell.m in Sources */,

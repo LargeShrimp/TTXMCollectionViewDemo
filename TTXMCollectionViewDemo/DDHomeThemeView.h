@@ -1,5 +1,5 @@
 //
-//  DDThemeCell.h
+//  DDHomeThemeView.h
 //  TTXMCollectionViewDemo
 //
 //  Created by taitanxiami on 16/1/25.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDThemeCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UILabel *themeTitleLabel;
+@interface DDHomeThemeView : UIView
 
+- (void) configCellWithThemeData:(NSArray *)arr;
 @end

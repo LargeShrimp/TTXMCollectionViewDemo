@@ -9,18 +9,20 @@
 #import "ViewController.h"
 #import "DDHomeFirstCell.h"
 #import <Masonry.h>
-#import "DDThemeCell.h"
+
 #import "DDImagePlayerCell.h"
 #import "DDImagePlayerCell+ConfigCell.h"
 #import <UIImageView+WebCache.h>
+#import "DDHomeThemeCell.h"
+#import "DDHomeThemeCell+ConfigThemeCell.h"
 #define ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight     [UIScreen mainScreen].bounds.size.heigh
 
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
 static NSString *const FIRSTCELLIDENTIFY = @"firstCell";
-static NSString *const ThemeCellIdentify = @"themeCell";
 static NSString *const ImagePlayerCell = @"imagePlayerCell";
+static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
 @interface ViewController ()
 <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -49,6 +51,7 @@ static NSString *const ImagePlayerCell = @"imagePlayerCell";
     }];    
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeFirstCell" bundle:nil] forCellWithReuseIdentifier:FIRSTCELLIDENTIFY];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDImagePlayerCell" bundle:nil] forCellWithReuseIdentifier:ImagePlayerCell];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeThemeCell" bundle:nil] forCellWithReuseIdentifier:THEMECELLIDENTIFY];
     
 
 }
@@ -79,7 +82,7 @@ static NSString *const ImagePlayerCell = @"imagePlayerCell";
             break;
         case 2:
         {
-            
+            return 1;
         }
             break;
             
@@ -102,12 +105,17 @@ static NSString *const ImagePlayerCell = @"imagePlayerCell";
         
         [cell configCellWithImages:@[@"http://www.intel.cn/content/dam/staging/image/Kim/standards_consumer_320x160.jpg"]];
         return cell;
+    }else if (indexPath.section ==2 ) {
+        DDHomeThemeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:THEMECELLIDENTIFY forIndexPath:indexPath];
+        
+        [cell configThemeCellWithData:@[@"百货专区", @"食品专区", @"粮油专区", @"米面专区"]];
+        return cell;
     }
     return nil;
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return 2;
+    return 3;
 }
 
 
@@ -131,6 +139,11 @@ static NSString *const ImagePlayerCell = @"imagePlayerCell";
             }else {
                 return CGSizeMake(ScreenWidth / 4, ScreenWidth / 4);
             }
+        }
+            
+        case 2:
+        {
+                return CGSizeMake(ScreenWidth , ScreenWidth / 2);
         }
         default:
             break;

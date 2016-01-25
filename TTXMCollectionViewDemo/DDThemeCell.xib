@@ -28,7 +28,6 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="PcJ-56-wIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="HnS-sf-8po"/>
                 <constraint firstItem="7SM-Gn-awa" firstAttribute="leading" secondItem="PcJ-56-wIM" secondAttribute="leading" id="THW-OI-G8e"/>
@@ -36,7 +35,10 @@
                 <constraint firstItem="7SM-Gn-awa" firstAttribute="top" secondItem="PcJ-56-wIM" secondAttribute="bottom" constant="5" id="myf-Wi-4VG"/>
             </constraints>
             <size key="customSize" width="248" height="170"/>
-            <point key="canvasLocation" x="115" y="293"/>
+            <connections>
+                <outlet property="themeTitleLabel" destination="PcJ-56-wIM" id="h66-y1-B10"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="237"/>
         </collectionViewCell>
     </objects>
 </document>
