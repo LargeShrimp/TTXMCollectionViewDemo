@@ -15,6 +15,8 @@
 #import <UIImageView+WebCache.h>
 #import "DDHomeThemeCell.h"
 #import "DDHomeThemeCell+ConfigThemeCell.h"
+
+#import "DDHomeBrandCell.h"
 #define ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight     [UIScreen mainScreen].bounds.size.heigh
 
@@ -23,11 +25,10 @@
 static NSString *const FIRSTCELLIDENTIFY = @"firstCell";
 static NSString *const ImagePlayerCell = @"imagePlayerCell";
 static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
+static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
 @interface ViewController ()
 <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSArray *section1Arr;
-@property (nonatomic, strong) NSArray *section1ImageArr;
 
 @end
 
@@ -52,6 +53,7 @@ static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeFirstCell" bundle:nil] forCellWithReuseIdentifier:FIRSTCELLIDENTIFY];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDImagePlayerCell" bundle:nil] forCellWithReuseIdentifier:ImagePlayerCell];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeThemeCell" bundle:nil] forCellWithReuseIdentifier:THEMECELLIDENTIFY];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeBrandCell" bundle:nil] forCellWithReuseIdentifier:BRANDCELLIDENTIFY];
     
 
 }
@@ -68,29 +70,7 @@ static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    
-    switch (section) {
-        case 0:
-        {
-            return 1;
-        }
-            break;
-        case 1:
-        {
-            return 1;
-        }
-            break;
-        case 2:
-        {
-            return 1;
-        }
-            break;
-            
-        default:
-            break;
-    }
-    
-    return 0;
+       return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -105,17 +85,21 @@ static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
         
         [cell configCellWithImages:@[@"http://www.intel.cn/content/dam/staging/image/Kim/standards_consumer_320x160.jpg"]];
         return cell;
-    }else if (indexPath.section ==2 ) {
+    }else if (indexPath.section == 2 ) {
         DDHomeThemeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:THEMECELLIDENTIFY forIndexPath:indexPath];
         
         [cell configThemeCellWithData:@[@"百货专区", @"食品专区", @"粮油专区", @"米面专区"]];
+        return cell;
+    }else if (indexPath.section == 3) {
+        
+        DDHomeBrandCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BRANDCELLIDENTIFY forIndexPath:indexPath];
         return cell;
     }
     return nil;
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return 3;
+    return 4;
 }
 
 
@@ -125,7 +109,7 @@ static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
     switch (indexPath.section) {
         case 0:
         {
-            return CGSizeMake(ScreenWidth, ScreenWidth / 4);
+            return CGSizeMake(ScreenWidth, ScreenWidth / 4 );
         }
             break;
         case 1:
@@ -144,6 +128,11 @@ static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
         case 2:
         {
                 return CGSizeMake(ScreenWidth , ScreenWidth / 2);
+        }
+            
+        case 3:
+        {
+            return CGSizeMake(ScreenWidth, ScreenWidth / 2 + 44);
         }
         default:
             break;

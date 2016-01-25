@@ -27,9 +27,17 @@
 		843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */; };
 		843EDD311C567876002A4795 /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD301C567876002A4795 /* CustomCollectionViewLayout.m */; };
 		843EDD341C56789D002A4795 /* DDHomeThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD331C56789D002A4795 /* DDHomeThemeView.m */; };
+		844C4D641C56844700AF339B /* DDHomeBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C4D621C56844700AF339B /* DDHomeBrandCell.m */; };
+		844C4D651C56844700AF339B /* DDHomeBrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844C4D631C56844700AF339B /* DDHomeBrandCell.xib */; };
+		844C4D691C56851900AF339B /* DDBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C4D671C56851900AF339B /* DDBrandCell.m */; };
+		844C4D6A1C56851900AF339B /* DDBrandCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844C4D681C56851900AF339B /* DDBrandCell.xib */; };
+		844C4D6D1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C4D6C1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m */; };
+		844C4D711C56895D00AF339B /* DDHomeBrandHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C4D6F1C56895D00AF339B /* DDHomeBrandHeaderView.m */; };
+		844C4D721C56895D00AF339B /* DDHomeBrandHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844C4D701C56895D00AF339B /* DDHomeBrandHeaderView.xib */; };
 		849675031C567CE20016E2E8 /* DDHomeThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849675011C567CE20016E2E8 /* DDHomeThemeCell.m */; };
 		849675041C567CE20016E2E8 /* DDHomeThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */; };
 		849675071C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */; };
+		8496750A1C5683110016E2E8 /* DDHomeBrandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849675091C5683110016E2E8 /* DDHomeBrandView.m */; };
 		D4288540CE35F5ED857B8D2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B06422D100E4B590B396CC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +77,24 @@
 		843EDD301C567876002A4795 /* CustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewLayout.m; sourceTree = "<group>"; };
 		843EDD321C56789D002A4795 /* DDHomeThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeThemeView.h; sourceTree = "<group>"; };
 		843EDD331C56789D002A4795 /* DDHomeThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeThemeView.m; sourceTree = "<group>"; };
+		844C4D611C56844700AF339B /* DDHomeBrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeBrandCell.h; sourceTree = "<group>"; };
+		844C4D621C56844700AF339B /* DDHomeBrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeBrandCell.m; sourceTree = "<group>"; };
+		844C4D631C56844700AF339B /* DDHomeBrandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeBrandCell.xib; sourceTree = "<group>"; };
+		844C4D661C56851900AF339B /* DDBrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBrandCell.h; sourceTree = "<group>"; };
+		844C4D671C56851900AF339B /* DDBrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBrandCell.m; sourceTree = "<group>"; };
+		844C4D681C56851900AF339B /* DDBrandCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDBrandCell.xib; sourceTree = "<group>"; };
+		844C4D6B1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDHomeBrandCell+ConfigBrandCell.h"; sourceTree = "<group>"; };
+		844C4D6C1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDHomeBrandCell+ConfigBrandCell.m"; sourceTree = "<group>"; };
+		844C4D6E1C56895D00AF339B /* DDHomeBrandHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeBrandHeaderView.h; sourceTree = "<group>"; };
+		844C4D6F1C56895D00AF339B /* DDHomeBrandHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeBrandHeaderView.m; sourceTree = "<group>"; };
+		844C4D701C56895D00AF339B /* DDHomeBrandHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeBrandHeaderView.xib; sourceTree = "<group>"; };
 		849675001C567CE20016E2E8 /* DDHomeThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeThemeCell.h; sourceTree = "<group>"; };
 		849675011C567CE20016E2E8 /* DDHomeThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeThemeCell.m; sourceTree = "<group>"; };
 		849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeThemeCell.xib; sourceTree = "<group>"; };
 		849675051C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDHomeThemeCell+ConfigThemeCell.h"; sourceTree = "<group>"; };
 		849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDHomeThemeCell+ConfigThemeCell.m"; sourceTree = "<group>"; };
+		849675081C5683110016E2E8 /* DDHomeBrandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeBrandView.h; sourceTree = "<group>"; };
+		849675091C5683110016E2E8 /* DDHomeBrandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeBrandView.m; sourceTree = "<group>"; };
 		9C90C1D5945FB2CDFF76E853 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F03E60B44C3171A5FC6CB518 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +174,8 @@
 				843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */,
 				843EDD321C56789D002A4795 /* DDHomeThemeView.h */,
 				843EDD331C56789D002A4795 /* DDHomeThemeView.m */,
+				849675081C5683110016E2E8 /* DDHomeBrandView.h */,
+				849675091C5683110016E2E8 /* DDHomeBrandView.m */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -180,6 +203,17 @@
 				849675021C567CE20016E2E8 /* DDHomeThemeCell.xib */,
 				849675051C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.h */,
 				849675061C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m */,
+				844C4D611C56844700AF339B /* DDHomeBrandCell.h */,
+				844C4D621C56844700AF339B /* DDHomeBrandCell.m */,
+				844C4D631C56844700AF339B /* DDHomeBrandCell.xib */,
+				844C4D661C56851900AF339B /* DDBrandCell.h */,
+				844C4D671C56851900AF339B /* DDBrandCell.m */,
+				844C4D681C56851900AF339B /* DDBrandCell.xib */,
+				844C4D6B1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.h */,
+				844C4D6C1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m */,
+				844C4D6E1C56895D00AF339B /* DDHomeBrandHeaderView.h */,
+				844C4D6F1C56895D00AF339B /* DDHomeBrandHeaderView.m */,
+				844C4D701C56895D00AF339B /* DDHomeBrandHeaderView.xib */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -273,8 +307,11 @@
 				849675041C567CE20016E2E8 /* DDHomeThemeCell.xib in Resources */,
 				8403D67C1C56029400774406 /* LaunchScreen.storyboard in Resources */,
 				8403D6791C56029400774406 /* Assets.xcassets in Resources */,
+				844C4D721C56895D00AF339B /* DDHomeBrandHeaderView.xib in Resources */,
 				8403D6891C56056C00774406 /* DDHomeCategoryCell.xib in Resources */,
 				8403D6771C56029400774406 /* Main.storyboard in Resources */,
+				844C4D6A1C56851900AF339B /* DDBrandCell.xib in Resources */,
+				844C4D651C56844700AF339B /* DDHomeBrandCell.xib in Resources */,
 				843EDD241C5667CF002A4795 /* DDImagePlayerCell.xib in Resources */,
 				8403D68F1C56109A00774406 /* DDThemeCell.xib in Resources */,
 				843EDD1F1C566398002A4795 /* DDHomeFirstCell.xib in Resources */,
@@ -338,11 +375,14 @@
 			files = (
 				8403D6741C56029400774406 /* ViewController.m in Sources */,
 				8403D6711C56029400774406 /* AppDelegate.m in Sources */,
+				844C4D641C56844700AF339B /* DDHomeBrandCell.m in Sources */,
+				844C4D691C56851900AF339B /* DDBrandCell.m in Sources */,
 				843EDD2B1C56683D002A4795 /* GGBannerView.m in Sources */,
 				843EDD311C567876002A4795 /* CustomCollectionViewLayout.m in Sources */,
 				843EDD2A1C56683D002A4795 /* GGBannerCollectionViewCell.m in Sources */,
 				8403D68A1C56056C00774406 /* DDHomeCategoryCell.m in Sources */,
 				843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */,
+				844C4D6D1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m in Sources */,
 				843EDD341C56789D002A4795 /* DDHomeThemeView.m in Sources */,
 				849675031C567CE20016E2E8 /* DDHomeThemeCell.m in Sources */,
 				8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */,
@@ -351,6 +391,8 @@
 				843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */,
 				843EDD231C5667CF002A4795 /* DDImagePlayerCell.m in Sources */,
 				8403D66E1C56029400774406 /* main.m in Sources */,
+				844C4D711C56895D00AF339B /* DDHomeBrandHeaderView.m in Sources */,
+				8496750A1C5683110016E2E8 /* DDHomeBrandView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
