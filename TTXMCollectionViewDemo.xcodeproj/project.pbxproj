@@ -17,6 +17,14 @@
 		8403D68A1C56056C00774406 /* DDHomeCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403D6881C56056C00774406 /* DDHomeCategoryCell.m */; };
 		8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403D68C1C56109A00774406 /* DDThemeCell.m */; };
 		8403D68F1C56109A00774406 /* DDThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403D68D1C56109A00774406 /* DDThemeCell.xib */; };
+		843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */; };
+		843EDD1E1C566398002A4795 /* DDHomeFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD1C1C566398002A4795 /* DDHomeFirstCell.m */; };
+		843EDD1F1C566398002A4795 /* DDHomeFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843EDD1D1C566398002A4795 /* DDHomeFirstCell.xib */; };
+		843EDD231C5667CF002A4795 /* DDImagePlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD211C5667CF002A4795 /* DDImagePlayerCell.m */; };
+		843EDD241C5667CF002A4795 /* DDImagePlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843EDD221C5667CF002A4795 /* DDImagePlayerCell.xib */; };
+		843EDD2A1C56683D002A4795 /* GGBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD271C56683D002A4795 /* GGBannerCollectionViewCell.m */; };
+		843EDD2B1C56683D002A4795 /* GGBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD291C56683D002A4795 /* GGBannerView.m */; };
+		843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */; };
 		D4288540CE35F5ED857B8D2B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B06422D100E4B590B396CC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +46,20 @@
 		8403D68B1C56109A00774406 /* DDThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDThemeCell.h; sourceTree = "<group>"; };
 		8403D68C1C56109A00774406 /* DDThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDThemeCell.m; sourceTree = "<group>"; };
 		8403D68D1C56109A00774406 /* DDThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDThemeCell.xib; sourceTree = "<group>"; };
+		843EDD151C565ED4002A4795 /* DDHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeHeaderView.h; sourceTree = "<group>"; };
+		843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeHeaderView.m; sourceTree = "<group>"; };
+		843EDD1B1C566398002A4795 /* DDHomeFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeFirstCell.h; sourceTree = "<group>"; };
+		843EDD1C1C566398002A4795 /* DDHomeFirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeFirstCell.m; sourceTree = "<group>"; };
+		843EDD1D1C566398002A4795 /* DDHomeFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeFirstCell.xib; sourceTree = "<group>"; };
+		843EDD201C5667CF002A4795 /* DDImagePlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImagePlayerCell.h; sourceTree = "<group>"; };
+		843EDD211C5667CF002A4795 /* DDImagePlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDImagePlayerCell.m; sourceTree = "<group>"; };
+		843EDD221C5667CF002A4795 /* DDImagePlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDImagePlayerCell.xib; sourceTree = "<group>"; };
+		843EDD261C56683D002A4795 /* GGBannerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBannerCollectionViewCell.h; sourceTree = "<group>"; };
+		843EDD271C56683D002A4795 /* GGBannerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBannerCollectionViewCell.m; sourceTree = "<group>"; };
+		843EDD281C56683D002A4795 /* GGBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBannerView.h; sourceTree = "<group>"; };
+		843EDD291C56683D002A4795 /* GGBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBannerView.m; sourceTree = "<group>"; };
+		843EDD2C1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDImagePlayerCell+ConfigCell.h"; sourceTree = "<group>"; };
+		843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDImagePlayerCell+ConfigCell.m"; sourceTree = "<group>"; };
 		9C90C1D5945FB2CDFF76E853 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F03E60B44C3171A5FC6CB518 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +133,8 @@
 			children = (
 				8403D6721C56029400774406 /* ViewController.h */,
 				8403D6731C56029400774406 /* ViewController.m */,
+				843EDD151C565ED4002A4795 /* DDHomeHeaderView.h */,
+				843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -118,12 +142,21 @@
 		8403D6841C56055700774406 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				843EDD251C56683D002A4795 /* GGBannerView */,
 				8403D6861C56056C00774406 /* DDHomeCategoryCell.xib */,
 				8403D6871C56056C00774406 /* DDHomeCategoryCell.h */,
 				8403D6881C56056C00774406 /* DDHomeCategoryCell.m */,
 				8403D68B1C56109A00774406 /* DDThemeCell.h */,
 				8403D68C1C56109A00774406 /* DDThemeCell.m */,
 				8403D68D1C56109A00774406 /* DDThemeCell.xib */,
+				843EDD1B1C566398002A4795 /* DDHomeFirstCell.h */,
+				843EDD1C1C566398002A4795 /* DDHomeFirstCell.m */,
+				843EDD1D1C566398002A4795 /* DDHomeFirstCell.xib */,
+				843EDD201C5667CF002A4795 /* DDImagePlayerCell.h */,
+				843EDD211C5667CF002A4795 /* DDImagePlayerCell.m */,
+				843EDD221C5667CF002A4795 /* DDImagePlayerCell.xib */,
+				843EDD2C1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.h */,
+				843EDD2D1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -133,6 +166,17 @@
 			children = (
 			);
 			name = M;
+			sourceTree = "<group>";
+		};
+		843EDD251C56683D002A4795 /* GGBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				843EDD261C56683D002A4795 /* GGBannerCollectionViewCell.h */,
+				843EDD271C56683D002A4795 /* GGBannerCollectionViewCell.m */,
+				843EDD281C56683D002A4795 /* GGBannerView.h */,
+				843EDD291C56683D002A4795 /* GGBannerView.m */,
+			);
+			path = GGBannerView;
 			sourceTree = "<group>";
 		};
 		C1300ECAC6648FA21D532C7E /* Frameworks */ = {
@@ -155,6 +199,7 @@
 				8403D6661C56029400774406 /* Frameworks */,
 				8403D6671C56029400774406 /* Resources */,
 				85C252AF811340DFE10A6763 /* Copy Pods Resources */,
+				CB1D6B0BE43576E57FBC0726 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +251,9 @@
 				8403D6791C56029400774406 /* Assets.xcassets in Resources */,
 				8403D6891C56056C00774406 /* DDHomeCategoryCell.xib in Resources */,
 				8403D6771C56029400774406 /* Main.storyboard in Resources */,
+				843EDD241C5667CF002A4795 /* DDImagePlayerCell.xib in Resources */,
 				8403D68F1C56109A00774406 /* DDThemeCell.xib in Resources */,
+				843EDD1F1C566398002A4795 /* DDHomeFirstCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +273,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1D6B0BE43576E57FBC0726 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E17BD2913AEC77E8062EC224 /* Check Pods Manifest.lock */ = {
@@ -252,8 +314,14 @@
 			files = (
 				8403D6741C56029400774406 /* ViewController.m in Sources */,
 				8403D6711C56029400774406 /* AppDelegate.m in Sources */,
+				843EDD2B1C56683D002A4795 /* GGBannerView.m in Sources */,
+				843EDD2A1C56683D002A4795 /* GGBannerCollectionViewCell.m in Sources */,
 				8403D68A1C56056C00774406 /* DDHomeCategoryCell.m in Sources */,
+				843EDD2E1C566F1B002A4795 /* DDImagePlayerCell+ConfigCell.m in Sources */,
 				8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */,
+				843EDD1E1C566398002A4795 /* DDHomeFirstCell.m in Sources */,
+				843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */,
+				843EDD231C5667CF002A4795 /* DDImagePlayerCell.m in Sources */,
 				8403D66E1C56029400774406 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

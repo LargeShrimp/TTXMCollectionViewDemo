@@ -7,16 +7,20 @@
 //
 
 #import "ViewController.h"
-#import "DDHomeCategoryCell.h"
+#import "DDHomeFirstCell.h"
 #import <Masonry.h>
 #import "DDThemeCell.h"
+#import "DDImagePlayerCell.h"
+#import "DDImagePlayerCell+ConfigCell.h"
+#import <UIImageView+WebCache.h>
 #define ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight     [UIScreen mainScreen].bounds.size.heigh
 
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
-static NSString *const CategoryCellIdentify = @"categoryCell";
+static NSString *const FIRSTCELLIDENTIFY = @"firstCell";
 static NSString *const ThemeCellIdentify = @"themeCell";
+static NSString *const ImagePlayerCell = @"imagePlayerCell";
 @interface ViewController ()
 <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -31,9 +35,7 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.section1Arr = @[@"爆品推荐", @"限时抢购", @"促销专区", @"签到有礼"];
-    self.section1ImageArr = @[@"discount-icon", @"Limited-Time-icon", @"Promotions-icon", @"Registration-icon"];
-    [self loadCollectionView];
+      [self loadCollectionView];
 }
 
 - (void)loadCollectionView {
@@ -45,8 +47,8 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];    
-    [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeCategoryCell" bundle:nil] forCellWithReuseIdentifier:CategoryCellIdentify];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"DDThemeCell" bundle:nil] forCellWithReuseIdentifier:ThemeCellIdentify];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeFirstCell" bundle:nil] forCellWithReuseIdentifier:FIRSTCELLIDENTIFY];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DDImagePlayerCell" bundle:nil] forCellWithReuseIdentifier:ImagePlayerCell];
     
 
 }
@@ -67,12 +69,12 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     switch (section) {
         case 0:
         {
-            return 4;
+            return 1;
         }
             break;
         case 1:
         {
-            return 4;
+            return 1;
         }
             break;
         case 2:
@@ -92,14 +94,13 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     
     if ( indexPath.section == 0 ) {
         
-        DDHomeCategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CategoryCellIdentify forIndexPath:indexPath];
-        cell.cateNameLabel.text  = self.section1Arr[indexPath.row];
-        cell.cateImageView.image = [UIImage imageNamed:self.section1ImageArr[indexPath.row]];
+        DDHomeFirstCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:FIRSTCELLIDENTIFY forIndexPath:indexPath];
         return cell;
     }else if ( indexPath.section == 1 ) {
         
-        DDThemeCell  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ThemeCellIdentify forIndexPath:indexPath];
-        cell.backgroundColor = RandomColor;
+        DDImagePlayerCell  *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ImagePlayerCell forIndexPath:indexPath];
+        
+        [cell configCellWithImages:@[@"http://www.intel.cn/content/dam/staging/image/Kim/standards_consumer_320x160.jpg"]];
         return cell;
     }
     return nil;
@@ -109,20 +110,21 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     return 2;
 }
 
+
 #pragma mark - layout delegate 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     switch (indexPath.section) {
         case 0:
         {
-            return CGSizeMake(ScreenWidth / 4, ScreenWidth / 4);
+            return CGSizeMake(ScreenWidth, ScreenWidth / 4);
         }
             break;
         case 1:
         {
             if (indexPath.row == 0) {
                 
-                return CGSizeMake(ScreenWidth / 2, ScreenWidth / 2);
+                return CGSizeMake(ScreenWidth , ScreenWidth / 2);
             }else if (indexPath.row == 1) {
                 
                 return CGSizeMake(ScreenWidth / 4, ScreenWidth / 4);
@@ -135,7 +137,6 @@ static NSString *const ThemeCellIdentify = @"themeCell";
     }
     return CGSizeZero;
 }
-
 
 #pragma mark - warning
 - (void)didReceiveMemoryWarning {
