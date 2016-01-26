@@ -47,8 +47,10 @@ static NSString *const DISCOUNTCELLIDENTIFY = @"homeDisocuntCell";
       [self loadCollectionView];
     
     self.dicountData = [NSMutableArray array];
-    [self.dicountData addObject:@"ss.png"];
-    [self.dicountData addObject:@"ss.png"];
+    for (NSInteger i = 0; i < 10 ; i++) {
+        [self.dicountData addObject:@"ss.png"];
+        
+    }
     
     __weak typeof(self) weakself = self;
     
@@ -56,25 +58,28 @@ static NSString *const DISCOUNTCELLIDENTIFY = @"homeDisocuntCell";
     MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         
         
-        [weakself.dicountData addObject:@"ss.png"];
-        [weakself.dicountData addObject:@"ss.png"];
-        [weakself.dicountData addObject:@"ss.png"];
-        [weakself.dicountData addObject:@"ss.png"];
+        for (NSInteger i = 0; i < 10 ; i++) {
+            
+            
+            [weakself.dicountData addObject:@"ss.png"];
+            
+        }
 
         NSIndexPath *indexpath = [NSIndexPath indexPathForRow:0 inSection:4];
         [weakself.collectionView reloadItemsAtIndexPaths:@[indexpath]];
         
 //        [weakself.collectionView reloadData];
+        
+        
         [weakself.collectionView.mj_footer endRefreshing];
 
-//        [weakself.collectionView layoutIfNeeded];
+
     }];
     
-//    footer.refreshingTitleHidden = YES;
+
     [footer setTitle:@"" forState:MJRefreshStateIdle];
 //    [footer setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
 //    [footer setTitle:@"No more data" forState:MJRefreshStateNoMoreData];
-
 //    footer.stateLabel.hidden = YES;
     self.collectionView.mj_footer = footer;
     
