@@ -17,6 +17,13 @@
 		8403D68A1C56056C00774406 /* DDHomeCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403D6881C56056C00774406 /* DDHomeCategoryCell.m */; };
 		8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403D68C1C56109A00774406 /* DDThemeCell.m */; };
 		8403D68F1C56109A00774406 /* DDThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8403D68D1C56109A00774406 /* DDThemeCell.xib */; };
+		842141561C570DD8003DABA3 /* DDHomeDiscountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842141551C570DD8003DABA3 /* DDHomeDiscountView.m */; };
+		8421415F1C5740A0003DABA3 /* DDHomeDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421415D1C5740A0003DABA3 /* DDHomeDiscountCell.m */; };
+		842141601C5740A0003DABA3 /* DDHomeDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8421415E1C5740A0003DABA3 /* DDHomeDiscountCell.xib */; };
+		842141631C5740C2003DABA3 /* DDLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 842141621C5740C2003DABA3 /* DDLikeView.m */; };
+		842141671C5742A9003DABA3 /* DDDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842141651C5742A9003DABA3 /* DDDiscountCell.m */; };
+		842141681C5742A9003DABA3 /* DDDiscountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842141661C5742A9003DABA3 /* DDDiscountCell.xib */; };
+		8421416B1C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421416A1C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.m */; };
 		843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */; };
 		843EDD1E1C566398002A4795 /* DDHomeFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843EDD1C1C566398002A4795 /* DDHomeFirstCell.m */; };
 		843EDD1F1C566398002A4795 /* DDHomeFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843EDD1D1C566398002A4795 /* DDHomeFirstCell.xib */; };
@@ -59,6 +66,18 @@
 		8403D68B1C56109A00774406 /* DDThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDThemeCell.h; sourceTree = "<group>"; };
 		8403D68C1C56109A00774406 /* DDThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDThemeCell.m; sourceTree = "<group>"; };
 		8403D68D1C56109A00774406 /* DDThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDThemeCell.xib; sourceTree = "<group>"; };
+		842141541C570DD8003DABA3 /* DDHomeDiscountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeDiscountView.h; sourceTree = "<group>"; };
+		842141551C570DD8003DABA3 /* DDHomeDiscountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeDiscountView.m; sourceTree = "<group>"; };
+		8421415C1C5740A0003DABA3 /* DDHomeDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeDiscountCell.h; sourceTree = "<group>"; };
+		8421415D1C5740A0003DABA3 /* DDHomeDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeDiscountCell.m; sourceTree = "<group>"; };
+		8421415E1C5740A0003DABA3 /* DDHomeDiscountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDHomeDiscountCell.xib; sourceTree = "<group>"; };
+		842141611C5740C2003DABA3 /* DDLikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLikeView.h; sourceTree = "<group>"; };
+		842141621C5740C2003DABA3 /* DDLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLikeView.m; sourceTree = "<group>"; };
+		842141641C5742A9003DABA3 /* DDDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDiscountCell.h; sourceTree = "<group>"; };
+		842141651C5742A9003DABA3 /* DDDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDiscountCell.m; sourceTree = "<group>"; };
+		842141661C5742A9003DABA3 /* DDDiscountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDDiscountCell.xib; sourceTree = "<group>"; };
+		842141691C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDDiscountCell+ConfigDiscountCell.h"; sourceTree = "<group>"; };
+		8421416A1C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DDDiscountCell+ConfigDiscountCell.m"; sourceTree = "<group>"; };
 		843EDD151C565ED4002A4795 /* DDHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeHeaderView.h; sourceTree = "<group>"; };
 		843EDD161C565ED4002A4795 /* DDHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeHeaderView.m; sourceTree = "<group>"; };
 		843EDD1B1C566398002A4795 /* DDHomeFirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeFirstCell.h; sourceTree = "<group>"; };
@@ -176,6 +195,10 @@
 				843EDD331C56789D002A4795 /* DDHomeThemeView.m */,
 				849675081C5683110016E2E8 /* DDHomeBrandView.h */,
 				849675091C5683110016E2E8 /* DDHomeBrandView.m */,
+				842141541C570DD8003DABA3 /* DDHomeDiscountView.h */,
+				842141551C570DD8003DABA3 /* DDHomeDiscountView.m */,
+				842141611C5740C2003DABA3 /* DDLikeView.h */,
+				842141621C5740C2003DABA3 /* DDLikeView.m */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -214,6 +237,14 @@
 				844C4D6E1C56895D00AF339B /* DDHomeBrandHeaderView.h */,
 				844C4D6F1C56895D00AF339B /* DDHomeBrandHeaderView.m */,
 				844C4D701C56895D00AF339B /* DDHomeBrandHeaderView.xib */,
+				8421415C1C5740A0003DABA3 /* DDHomeDiscountCell.h */,
+				8421415D1C5740A0003DABA3 /* DDHomeDiscountCell.m */,
+				8421415E1C5740A0003DABA3 /* DDHomeDiscountCell.xib */,
+				842141641C5742A9003DABA3 /* DDDiscountCell.h */,
+				842141651C5742A9003DABA3 /* DDDiscountCell.m */,
+				842141661C5742A9003DABA3 /* DDDiscountCell.xib */,
+				842141691C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.h */,
+				8421416A1C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.m */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -305,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849675041C567CE20016E2E8 /* DDHomeThemeCell.xib in Resources */,
+				842141601C5740A0003DABA3 /* DDHomeDiscountCell.xib in Resources */,
 				8403D67C1C56029400774406 /* LaunchScreen.storyboard in Resources */,
 				8403D6791C56029400774406 /* Assets.xcassets in Resources */,
 				844C4D721C56895D00AF339B /* DDHomeBrandHeaderView.xib in Resources */,
@@ -314,6 +346,7 @@
 				844C4D651C56844700AF339B /* DDHomeBrandCell.xib in Resources */,
 				843EDD241C5667CF002A4795 /* DDImagePlayerCell.xib in Resources */,
 				8403D68F1C56109A00774406 /* DDThemeCell.xib in Resources */,
+				842141681C5742A9003DABA3 /* DDDiscountCell.xib in Resources */,
 				843EDD1F1C566398002A4795 /* DDHomeFirstCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8421416B1C57597F003DABA3 /* DDDiscountCell+ConfigDiscountCell.m in Sources */,
 				8403D6741C56029400774406 /* ViewController.m in Sources */,
 				8403D6711C56029400774406 /* AppDelegate.m in Sources */,
 				844C4D641C56844700AF339B /* DDHomeBrandCell.m in Sources */,
@@ -385,14 +419,18 @@
 				844C4D6D1C56869E00AF339B /* DDHomeBrandCell+ConfigBrandCell.m in Sources */,
 				843EDD341C56789D002A4795 /* DDHomeThemeView.m in Sources */,
 				849675031C567CE20016E2E8 /* DDHomeThemeCell.m in Sources */,
+				842141671C5742A9003DABA3 /* DDDiscountCell.m in Sources */,
 				8403D68E1C56109A00774406 /* DDThemeCell.m in Sources */,
+				8421415F1C5740A0003DABA3 /* DDHomeDiscountCell.m in Sources */,
 				849675071C567D7E0016E2E8 /* DDHomeThemeCell+ConfigThemeCell.m in Sources */,
+				842141561C570DD8003DABA3 /* DDHomeDiscountView.m in Sources */,
 				843EDD1E1C566398002A4795 /* DDHomeFirstCell.m in Sources */,
 				843EDD171C565ED4002A4795 /* DDHomeHeaderView.m in Sources */,
 				843EDD231C5667CF002A4795 /* DDImagePlayerCell.m in Sources */,
 				8403D66E1C56029400774406 /* main.m in Sources */,
 				844C4D711C56895D00AF339B /* DDHomeBrandHeaderView.m in Sources */,
 				8496750A1C5683110016E2E8 /* DDHomeBrandView.m in Sources */,
+				842141631C5740C2003DABA3 /* DDLikeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

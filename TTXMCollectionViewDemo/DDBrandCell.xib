@@ -13,7 +13,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="160" height="103"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discount-icon" translatesAutoresizingMaskIntoConstraints="NO" id="hXH-BX-R7W">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brand－logo" translatesAutoresizingMaskIntoConstraints="NO" id="hXH-BX-R7W">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="103"/>
                     </imageView>
                 </subviews>
@@ -26,10 +26,10 @@
                 <constraint firstItem="hXH-BX-R7W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vYR-gP-znk"/>
             </constraints>
             <size key="customSize" width="160" height="103"/>
-            <point key="canvasLocation" x="273" y="239.5"/>
+            <point key="canvasLocation" x="308" y="241.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="discount-icon" width="42" height="42"/>
+        <image name="Brand－logo" width="72" height="54"/>
     </resources>
 </document>

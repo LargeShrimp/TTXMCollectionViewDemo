@@ -15,20 +15,26 @@
 #import <UIImageView+WebCache.h>
 #import "DDHomeThemeCell.h"
 #import "DDHomeThemeCell+ConfigThemeCell.h"
-
+#import "DDDiscountCell.h"
 #import "DDHomeBrandCell.h"
+#import <MJRefresh.h>
+#import "DDDiscountCell+ConfigDiscountCell.h"
+
 #define ScreenWidth     [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight     [UIScreen mainScreen].bounds.size.heigh
 
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 
-static NSString *const FIRSTCELLIDENTIFY = @"firstCell";
-static NSString *const ImagePlayerCell = @"imagePlayerCell";
-static NSString *const THEMECELLIDENTIFY = @"homeThemeCell";
-static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
+static NSString *const FIRSTCELLIDENTIFY    = @"firstCell";
+static NSString *const ImagePlayerCell      = @"imagePlayerCell";
+static NSString *const THEMECELLIDENTIFY    = @"homeThemeCell";
+static NSString *const BRANDCELLIDENTIFY    = @"homeBrandCell";
+static NSString *const DISCOUNTCELLIDENTIFY = @"homeDisocuntCell";
+
 @interface ViewController ()
 <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *dicountData;
 
 @end
 
@@ -39,6 +45,39 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
     
     self.view.backgroundColor = [UIColor whiteColor];
       [self loadCollectionView];
+    
+    self.dicountData = [NSMutableArray array];
+    [self.dicountData addObject:@"ss.png"];
+    [self.dicountData addObject:@"ss.png"];
+    
+    __weak typeof(self) weakself = self;
+    
+    
+    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        
+        
+        [weakself.dicountData addObject:@"ss.png"];
+        [weakself.dicountData addObject:@"ss.png"];
+        [weakself.dicountData addObject:@"ss.png"];
+        [weakself.dicountData addObject:@"ss.png"];
+
+        NSIndexPath *indexpath = [NSIndexPath indexPathForRow:0 inSection:4];
+        [weakself.collectionView reloadItemsAtIndexPaths:@[indexpath]];
+        
+//        [weakself.collectionView reloadData];
+        [weakself.collectionView.mj_footer endRefreshing];
+
+//        [weakself.collectionView layoutIfNeeded];
+    }];
+    
+//    footer.refreshingTitleHidden = YES;
+    [footer setTitle:@"" forState:MJRefreshStateIdle];
+//    [footer setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
+//    [footer setTitle:@"No more data" forState:MJRefreshStateNoMoreData];
+
+//    footer.stateLabel.hidden = YES;
+    self.collectionView.mj_footer = footer;
+    
 }
 
 - (void)loadCollectionView {
@@ -54,7 +93,8 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDImagePlayerCell" bundle:nil] forCellWithReuseIdentifier:ImagePlayerCell];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeThemeCell" bundle:nil] forCellWithReuseIdentifier:THEMECELLIDENTIFY];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DDHomeBrandCell" bundle:nil] forCellWithReuseIdentifier:BRANDCELLIDENTIFY];
-    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DDDiscountCell" bundle:nil] forCellWithReuseIdentifier:DISCOUNTCELLIDENTIFY];
+
 
 }
 #pragma mark - lazy load
@@ -64,6 +104,8 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
          layout.minimumLineSpacing = 0;
         layout.minimumInteritemSpacing = 0;
+
+        _collectionView.backgroundColor = [UIColor colorWithWhite:0.840 alpha:1.000];
         _collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
     }
     return _collectionView;
@@ -94,12 +136,17 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
         
         DDHomeBrandCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BRANDCELLIDENTIFY forIndexPath:indexPath];
         return cell;
+    }else {
+        DDDiscountCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DISCOUNTCELLIDENTIFY forIndexPath:indexPath];
+        
+        [cell configDiscountCell:self.dicountData];
+        return cell;
     }
     return nil;
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return 4;
+    return 5;
 }
 
 
@@ -109,7 +156,7 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
     switch (indexPath.section) {
         case 0:
         {
-            return CGSizeMake(ScreenWidth, ScreenWidth / 4 );
+            return CGSizeMake(ScreenWidth, ScreenWidth / 4 + 20 );
         }
             break;
         case 1:
@@ -132,8 +179,15 @@ static NSString *const BRANDCELLIDENTIFY = @"homeBrandCell";
             
         case 3:
         {
-            return CGSizeMake(ScreenWidth, ScreenWidth / 2 + 44);
+            return CGSizeMake(ScreenWidth, (ScreenWidth - 35) / 4 * 0.74 * 3 + 60);
         }
+            
+        case 4:
+        {
+            NSInteger count =  ((self.dicountData.count / 2 + self.dicountData.count % 2));
+            return CGSizeMake(ScreenWidth,  (count+1) * 10 + count * (ScreenWidth - 30) / 2);
+        }
+
         default:
             break;
     }

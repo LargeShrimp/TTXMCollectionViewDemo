@@ -13,26 +13,26 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="248" height="170"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌精致你的选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SM-Gn-awa">
-                        <rect key="frame" x="8" y="34" width="128" height="20"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百货专区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-56-wIM">
+                        <rect key="frame" x="8" y="8" width="52" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.99215686270000003" green="0.074509803920000006" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百货专区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-56-wIM">
-                        <rect key="frame" x="8" y="8" width="68" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.99215686270000003" green="0.074509803920000006" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌精致你的选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SM-Gn-awa">
+                        <rect key="frame" x="8" y="30" width="88" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="PcJ-56-wIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="HnS-sf-8po"/>
-                <constraint firstItem="7SM-Gn-awa" firstAttribute="leading" secondItem="PcJ-56-wIM" secondAttribute="leading" id="THW-OI-G8e"/>
-                <constraint firstItem="PcJ-56-wIM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Yeq-9h-Y2R"/>
-                <constraint firstItem="7SM-Gn-awa" firstAttribute="top" secondItem="PcJ-56-wIM" secondAttribute="bottom" constant="5" id="myf-Wi-4VG"/>
+                <constraint firstItem="PcJ-56-wIM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="JSA-5Z-6XE"/>
+                <constraint firstItem="7SM-Gn-awa" firstAttribute="leading" secondItem="PcJ-56-wIM" secondAttribute="leading" id="Naf-ZS-Xfw"/>
+                <constraint firstItem="7SM-Gn-awa" firstAttribute="top" secondItem="PcJ-56-wIM" secondAttribute="bottom" constant="6" id="Wn5-17-f0W"/>
+                <constraint firstItem="PcJ-56-wIM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="yGr-Ks-JJz"/>
             </constraints>
             <size key="customSize" width="248" height="170"/>
             <connections>

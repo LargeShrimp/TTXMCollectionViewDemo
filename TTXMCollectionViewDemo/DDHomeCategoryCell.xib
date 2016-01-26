@@ -24,7 +24,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食品区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzL-8Z-EK9">
                         <rect key="frame" x="33" y="70" width="45" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -42,7 +42,7 @@
                 <outlet property="cateImageView" destination="hZN-OD-jKm" id="sgP-hr-zDq"/>
                 <outlet property="cateNameLabel" destination="UzL-8Z-EK9" id="Mhq-qP-xpJ"/>
             </connections>
-            <point key="canvasLocation" x="295" y="240"/>
+            <point key="canvasLocation" x="424" y="260"/>
         </collectionViewCell>
     </objects>
 </document>

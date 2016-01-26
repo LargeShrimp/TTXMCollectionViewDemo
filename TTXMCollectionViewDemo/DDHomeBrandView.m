@@ -60,10 +60,10 @@ static NSString *const BRANDHEADERVIEWIDENIFY = @"headerView";
     if (!_collectionView) {
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-        layout.itemSize = CGSizeMake((ScreenWidth - 35) /  4, (ScreenWidth - 35) / 4);
+        layout.itemSize = CGSizeMake((ScreenWidth - 35) /  4, (ScreenWidth - 35) / 4 * 0.74);
         layout.minimumInteritemSpacing = 5;
         layout.minimumLineSpacing      = 5;
-        layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
+        layout.sectionInset = UIEdgeInsetsMake(4, 10, 4, 10);
 //        layout.scrollDirection  = UICollectionViewScrollDirectionHorizontal;
         _collectionView = [[UICollectionView alloc]initWithFrame:self.bounds collectionViewLayout:layout];
         _collectionView.dataSource = self;
@@ -74,7 +74,7 @@ static NSString *const BRANDHEADERVIEWIDENIFY = @"headerView";
         _collectionView.pagingEnabled = YES;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
-        //        _collectionView.scrollEnabled = NO;
+            _collectionView.scrollEnabled = NO;
         _collectionView.backgroundColor = [UIColor colorWithWhite:0.811 alpha:1.000];
     }
     return _collectionView;
@@ -84,7 +84,7 @@ static NSString *const BRANDHEADERVIEWIDENIFY = @"headerView";
     
 //    return self.images.count;
     
-    return 8;
+    return 12;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
